@@ -1,0 +1,4 @@
+pest_file,model_file
+./heads.ins,./heads.csv
+./sfr_ex.ins,./sfr_ex.csv
+./strdep.ins,./strdep.dat

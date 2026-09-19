@@ -1,0 +1,5 @@
+pest_file,model_file
+./supply2.wel.tpl,./supply2.wel
+./external.dat.tpl,./external.dat
+./supply2.npf.tpl,./supply2.npf
+./supply2.sfr.tpl,./supply2.sfr
