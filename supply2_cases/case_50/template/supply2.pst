@@ -1,0 +1,49 @@
+pcf version=2
+* control data keyword
+pestmode                                 estimation
+noptmax                               100
+phiredstp                         1.000000E-05
+nphistp                                10
+svdmode                                 1
+maxsing                          10000000
+eigthresh                           1e-06
+eigwrite                                1
+opt_direction                  max
+opt_constraint_groups          less_pi,greater_pi,less_obs
+opt_obj_func                   pi_obj_func
+opt_dec_var_groups             pumping,external
+opt_ext_var_groups             external
+sqp_use_ensemble_approx_hessian false
+sqp_num_reals                  150
+sqp_update_hessian             true
+sqp_alpha_mults                0.01,0.1,0.2,0.4,0.7,1.0
+sqp_subset_size                20
+par_sigma_range                30
+sqp_working_set_tol            0.15
+sqp_filter_tol                 0.0001
+sqp_hess_max_cond_num          10000000.0
+sqp_max_reinflation_cond_num   6000
+sqp_scale_down_factor          0.9
+sqp_enforce_bounds             false
+sqp_rescale_search_dir         false
+sqp_viol_pad                   0.0
+sqp_seek_feas_max_iter         10
+sqp_risk                       0.6
+opt_stack_size                 150
+opt_chance_points              SINGLE
+sqp_debug_enable_constraint_weighted_jco false
+sqp_num_refined_search_pts     0
+* parameter groups external
+supply2.pargp_data.csv
+* parameter data external
+supply2.par_data.csv
+* observation data external
+supply2.obs_data.csv
+* model command line
+python forward_run.py
+* model input external
+supply2.tplfile_data.csv
+* model output external
+supply2.insfile_data.csv
+* prior information external
+supply2.pi_data.csv

@@ -33,13 +33,13 @@ def helper(pvals=None):
     
     sim = {"obj": obj}
     for i, c in enumerate(constraints):
-        sim[f"constraint{i+1}"] = c
-    
+        sim[f"g{i+1}"] = c
+
     with open('obs.dat','w') as f:
         f.write('obsnme,obsval\n')
         f.write('obj,'+str(sim["obj"])+'\n')
         for i in range(len(constraints)):
-            f.write(f'g{i+1},{sim[f"constraint{i+1}"]}\n')
+            f.write(f'g{i+1},{sim[f"g{i+1}"]}\n')
 
     return sim
 

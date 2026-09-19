@@ -1,0 +1,5 @@
+pargpnme,inctyp,derinc,derinclb,forcen,derincmul,dermthd,splitthresh,splitreldiff,splitaction
+trans,relative,0.01,0.0,switch,2.0,parabolic,1e-05,0.5,smaller
+pumping,absolute,5000.0,0.0,switch,2.0,parabolic,1e-05,0.5,smaller
+external,absolute,1000.0,0.0,switch,2.0,parabolic,1e-05,0.5,smaller
+sfr_seg,relative,0.01,0.0,switch,2.0,parabolic,1e-05,0.5,smaller
